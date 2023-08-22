@@ -33,6 +33,7 @@ function ViewCreator() {
       
       {/* Link to edit the content creator's information */}
       <Link to={`/creator/${creator.id}/edit`}>Edit</Link>
+      <Link to={`/`}>View All Creators</Link>
     </div>
   );
 }

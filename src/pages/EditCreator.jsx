@@ -34,6 +34,7 @@ function EditCreator() {
     e.preventDefault();
     const response = await supabase.from('creators').update(creator).eq('id', id);
     if (!response.error) {
+      alert('Creator updated successfully!')
       navigate(`/creator/${id}`);
     } else {
       alert('Failed to update creator. Please try again.');
